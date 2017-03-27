@@ -20,7 +20,7 @@ Your goal is to build out all of the methods listed in the deliverables. Do your
 
 We've provided you with a console that you can use to test your code. To enter a console session, run `ruby tools/console.rb`. You'll be able to test out the methods that you write here.
 
-**To Submit** - once you've completed all the deliverables, please copy/paste your three class definitions into the `solution.rb`  file. Please don't submit the lab until we give you the signal. 
+**To Submit** - once you've completed all the deliverables, please copy/paste your three class definitions into the `solution.rb`  file. Please don't submit the lab until we give you the signal.
 
 ## Deliverables
 
@@ -55,3 +55,21 @@ Build out the following methods on the restaurant class
   + returns an array of all reviews for that restaurant
 + Restaurant#customers
   + should return all of the customers who have written reviews of that restaurant.
+
+1. First, create `Customer.all` x
+2. Use `Customer.all` to build out the `find_by` methods x
+###
+3. Review.all, Review#customer, Review#restaurant x
+4. `Restaurant.all` x
+5. `Restaurant.find_by_name(name)` x
+###
+5. `Restaurant#reviews`x
+6. `Restaurant#customers`x
+7. `Customer.add_review` x
+
+```
+customer = Customer.new('Ian', 'Candy')
+restaurant = Restaurant.new('Patsys Pizza')
+customer.add_review(restaurant, "It was good")
+```
+Review.all.last #=> an instance of the review pointing at Ian, Patsys, and some content
